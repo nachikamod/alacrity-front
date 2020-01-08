@@ -1,3 +1,8 @@
+@font-face{
+  font-family: 'inception';
+  src: url(fonts/Inception_free.ttf);
+}
+
 .event-title {
   display:inline-block;
   overflow:hidden;
@@ -25,21 +30,23 @@
 
 
 @keyframes slidein {
-    0% { margin-left:-800px; }
-    20% { margin-left:-800px; }
-    35% { margin-left:0px; }
-    100% { margin-left:0px; }
+    0% { margin-left:-800px;}
+    20% { margin-left:-800px;}
+    35% { margin-left:0px;}
+    100% { margin-left:0px;}
 }
 
 
 @keyframes reveal {
     0% {opacity:0;width:0px;}
     20% {opacity:1;width:0px;}
-    30% {width:450px;}
+    30% {width:320px;}
     80% {opacity:1;}
-    100% {opacity:0;width:450px;}
+    100% {opacity:0;width:320px;}
 }
 
 .com-soon{
   font-size: 1vw;
 }
+
+
