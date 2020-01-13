@@ -7,6 +7,44 @@
     z-index: -1;
 }
 
+
+@media only screen and (max-width:1000px) {
+
+  .navbar{
+    display: none;
+  }
+
+  .event-name{
+    
+    margin-top: 50vw;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1vw;
+
+  }
+
+}
+
+@media only screen and (max-width:600px){
+
+  .clg_name {
+
+    display: block;
+
+  }
+
+}
+
+
+@media only screen and (min-width:1000px){
+  .clg_name{
+    display: none;
+  }
+}
+
 .event-name{
     margin-left: 5vw;
     position: absolute;

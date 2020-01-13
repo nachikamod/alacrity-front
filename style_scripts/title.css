@@ -7,7 +7,7 @@
   display:inline-block;
   overflow:hidden;
   white-space:nowrap;
-  font-size: 4vw;
+  font-size:4vw;
 }
 
 .event-title:first-of-type {    /* For increasing performance 
@@ -50,3 +50,35 @@
 }
 
 
+@media only screen and (max-width:600px){
+
+  .event-title {
+    display:inline-block;
+    overflow:hidden;
+    white-space:nowrap;
+    font-size: 8vw;
+  }
+
+  .com-soon{
+    font-size: 2vw;
+  }
+
+  .headings{
+
+    font-weight: 500;
+    letter-spacing: 0.2vw;
+    font-size:10vw;
+  
+  }
+
+}
+
+/*contact us headings*/
+
+.headings{
+
+  font-weight: 500;
+  letter-spacing: 0.2vw;
+  font-size:1.5vw;
+
+}

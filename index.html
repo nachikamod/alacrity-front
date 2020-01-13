@@ -10,6 +10,9 @@
     <script src="bg-rsc/three.r92.min.js"></script>
     <script src="bg-rsc/vanta.globe.min.js"></script>
     <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -17,10 +20,17 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style_scripts/title.css">
+    <script src="https://firebasestorage.googleapis.com/v0/b/alacrity-f3971.appspot.com/o/hosting_alacrity%2Fapi_key%2Falacrity-auth.js?alt=media&token=2b2e4e95-e95f-4861-8584-d9d81a38f3dc"></script>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cute+Font&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+    <script src="js-lib/counter.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Aldrich&display=swap" rel="stylesheet">
+
 
 </head>
-<body>
+<body onload="timeStamper()">
   
 
     <!--Background start -->
@@ -28,7 +38,7 @@
     <div style="position: absolute;width: 100%;">
     
         
-        <nav class="navbar navbar-expand-lg navbar-dark"> 
+        <nav style="font-family: 'Aldrich', sans-serif" class="navbar navbar-expand-lg navbar-dark"> 
     
             <div class="collapse navbar-collapse" id="navbarText" style="width: 100%;">
                 <ul class="navbar-nav mr-auto">
@@ -42,16 +52,16 @@
                         <a class="nav-link" href="#">Events</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Highlights</a>
+                        <a class="nav-link" href="highlight.html">Highlights</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Sponsors</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
+                        <a class="nav-link" href="contact_us.html">Contact Us</a>
                     </li>
                 </ul>
-                <span style="font-size: 1.3vw;color: #FFFFFF;" class="navbar-text">
+                <span style="font-size: 1.3vw;color: #FFFFFF;font-family: 'Black Ops One', cursive;letter-spacing:0.4vw" class="navbar-text">
                     AISSMS IOIT
                 </span>
             </div>
@@ -59,13 +69,18 @@
 
     </div>
 
+    <div style="position: absolute;bottom: 0;right:0;padding-right:1vw;text-align: center">
+        <p id="count" style="color: rgb(43, 42, 42);font-size: 3vw;font-family: 'Cute Font', cursive;">0</p>
+    </div>
+
+    <div style="position: absolute;bottom: 0;right:0;padding: 1vw;color: white" class="clg_name">AISSMS IOIT</div>
 
     <div id="test_element" style="z-index: -1;width: auto;height: 100%">
         <script>
             VANTA.GLOBE({
             el: "#test_element",
             color: 0xff0000,
-  backgroundColor: 0x0
+            backgroundColor: 0x0
             })
         </script>
     </div>
@@ -73,16 +88,13 @@
     
     <div class="event-name">
         
-        <div class="event-title" style="font-family: Georgia, 'Times New Roman', Times, serif" >ALACRITY</div> <br>
+        <div class="event-title" style="font-family: 'Black Ops One', cursive;">ALACRITY</div> <br>
         <div class="event-title">  
-            <span class="com-soon">COMING SOON...<br>17 to 20th Feb</span>
+            <span class="com-soon" >17 to 20th Feb<br>COMING SOON...</span>
         </div>
 
     </div>
 
-    
-</body>
-<body>
     
 </body>
 </html>

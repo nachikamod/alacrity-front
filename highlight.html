@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <Title>Heighlights</Title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+        <link rel="stylesheet" type="text/css" href="swiper.min.css">
+        <link rel="stylesheet" type="text/css" href="highlights.css">
+        <script src="bg-rsc/three.r92.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+       
+
+    </head>
+    <body>
+        <div id="bg_ring" style="z-index: -1;width: auto;height: 100%">
+        
+            <script src="bg-rsc/three.r92.min.js"></script>
+            <script src="bg-rsc/vanta.dots.min.js"></script>
+            <script>
+                VANTA.DOTS({
+                    el: "#bg_ring",
+                    backgroundColor: 0x0,
+                    color2: 0xa4a4a4,
+                    color: 0xff0000
+                })
+            </script>
+            
+        </div>
+        
+        <div style="position: absolute;width:100%;">
+
+            <nav style="font-family: 'Aldrich', sans-serif" class="navbar navbar-expand-lg navbar-dark"> 
+                
+
+                <div class="collapse navbar-collapse" id="navbarText" style="width: 100%;">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/">HOME <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="highlight.html">Highlights</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sponsors</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact_us.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <span style="font-size: 1.3vw;color: #FFFFFF;font-family: 'Black Ops One', cursive;letter-spacing:0.4vw" class="navbar-text">
+                        AISSMS IOIT
+                    </span>
+                </div>
+            </nav>
+        
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                      <div class="imgBx">
+                          <img src="1.jpg">
+                      </div>
+                      <div class="details">
+                            <h3>Alacrity 1<br><span>technical event</span></h3>
+                      </div>
+                  </div> 
+                  <div class="swiper-slide">
+                    <div class="imgBx">
+                        <img src="2.jpg">
+                    </div>
+                    <div class="details">
+                          <h3>Alacrity 2<br><span>sport event</span></h3>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="imgBx">
+                        <img src="3.jpg">
+                    </div>
+                    <div class="details">
+                          <h3>Alacrity 3<br><span>cultural event</span></h3>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="imgBx">
+                        <img src="4.jpg">
+                    </div>
+                    <div class="details">
+                          <h3>Alacrity 4<br><span>management</span></h3>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="imgBx">
+                        <img src="5.jpg">
+                    </div>
+                    <div class="details">
+                          <h3>Alacrity 5<br><span>the end</span></h3>
+                    </div>
+                </div>             
+                </div>
+            <script type="text/javascript" src="swiper.min.js"></script>
+            <script>
+                var swiper = new Swiper('.swiper-container', {
+                  effect: 'coverflow',
+                  grabCursor: true,
+                  centeredSlides: true,
+                  slidesPerView: 'auto',
+                  coverflowEffect: {
+                    rotate: 50,
+                    stretch: 0,
+                    depth: 100,
+                    modifier: 1,
+                    slideShadows : true,
+                  },
+                  pagination: {
+                    el: '.swiper-pagination',
+                  },
+                });
+              </script>
+
+        </div>
+
+
+
+           <!--go ahead ok -->  
+      
+
+
+
+
+    </body>
+
+</html>
