@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Contact Us</title>
     <script src="bg-rsc/three.r92.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -14,8 +14,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style_scripts/title.css">
-
-
+    <link href="https://fonts.googleapis.com/css?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Aldrich&display=swap" rel="stylesheet">
+    
 </head>
 <body>
 
@@ -30,7 +31,7 @@
                         <a class="nav-link" href="/">HOME <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Events</a>
@@ -52,38 +53,38 @@
         </nav>
         <!--any help ?-->
 
-        <div style="width: 100%;margin-top: 3vw;">
+        <div style="width: 100%;margin-top: 2vw;font-family: 'Aldrich', sans-serif">
         
             <div style="text-align: center;width: 100%;">
                 
                 <p style="color: white;font-size: 2vw">CONTACT US</p>
 
-                <div style="margin-top: 3vw;color: white;">
-
-                    <p class="headings" style="font-size:1.5vw;opacity: none;">GENERAL SECRETARY</p>
-                    <p>Mayur Dogras</p>
-                    <p>**********</p>
-                    <p>dont_know@gmail.com</p>
-
-                </div>
-                
-                <div style="margin-top: 5vw" class="container-fluid">
+                <div style="margin-top: 12vw" class="container-fluid">
                     <div style="color: white;" class="row">
-                        <div class="col-sm-4">
+
+                        <div class="col-sm-3">
                             <p class="headings">SPONSORSHIP HEAD</p>
-                            <p>ANAND GUNDECHA</p>
+                            <p>Someone we dont know</p>
                             <p>7020517689</p>
                             <p>not_given@gmail.com</p> 
                         </div>
-                        <div class="col-sm-4">
+                        <div class="col-sm-3">
+                            
+                            <p class="headings">GENERAL SECRETARY</p>
+                            <p>Mayur Dokras</p>
+                            <p>0800001066</p>
+                            <p>dont_know@gmail.com</p>
+
+                        </div>
+                        <div class="col-sm-3">
                             <p class="headings">PRESIDENT</p>
-                            <p>MOIN PATEL</p>
+                            <p>Baby Yoda</p>
                             <p>7020517689</p>
                             <p>not_given@gmail.com</p> 
                         </div>
-                        <div class="col-sm-4">
+                        <div class="col-sm-3">
                             <p class="headings">CAMPAIGNING HEAD</p>
-                            <p>ABHISHEK PATIL</p>
+                            <p>Aditya Baradkar</p>
                             <p>7020517689</p>
                             <p>nsportyguy12623@gmail.com</p> 
                         </div>
@@ -94,6 +95,7 @@
 
         </div>
 
+    
     </div>
 
     <div id="bg_bird" style="z-index: -1;width: auto;height: 100%">
@@ -102,18 +104,36 @@
         <script>
             
             VANTA.BIRDS({
-              el: "#bg_bird",
-              colorMode: "lerp"
+                el: "#bg_bird",
+                backgroundColor: 0x0,
+                color1: 0x2b586b,
+                color2: 0x0,
+                colorMode: "lerp"
             })
         </script>  
         
         <div style="position:absolute;width: 100%">
             
-            
         </div>
     </div>
 
+    <div id="googleMap" style="width:100%;height:350px">
+
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0rD4CjnC6bt0o2k_1PomL0FNp2MDfStM&callback=initMap" type="text/javascript"></script>
     
+        
+        <script>
+           function initMap() {
+                // The location of Uluru
+                var uluru = {lat: 18.531270, lng: 73.867141};
+                // The map, centered at Uluru
+                var map = new google.maps.Map(
+                document.getElementById('googleMap'), {zoom: 18, center: uluru});
+                // The marker, positioned at Uluru
+                var marker = new google.maps.Marker({position: uluru, map: map});
+            }
+        </script>
+    </div>
 
 </body>
 </html>

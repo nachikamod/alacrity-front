@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding:0;
+}
+
 @font-face{
   font-family: 'inception';
   src: url(fonts/Inception_free.ttf);
@@ -8,6 +13,7 @@
   overflow:hidden;
   white-space:nowrap;
   font-size:4vw;
+  text-shadow: 5px 5px 8px #2b586b;
 }
 
 .event-title:first-of-type {    /* For increasing performance 
@@ -80,5 +86,6 @@
   font-weight: 500;
   letter-spacing: 0.2vw;
   font-size:1.5vw;
+  
 
 }

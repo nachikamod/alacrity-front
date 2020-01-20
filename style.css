@@ -141,3 +141,10 @@
   background-image: url(img-rsc/bg_img.png);
   background-size: cover;
 }
+
+.social_media{
+  margin: 2vw;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
