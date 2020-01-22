@@ -20,38 +20,42 @@
     
 </head>
 <body>
+    <script src="https://kit.fontawesome.com/62a31fdea1.js" crossorigin="anonymous"></script>
+
 
     <div style="position: absolute;width: 100%;">
     
         
-        <nav style="font-family: 'Aldrich', sans-serif" class="navbar navbar-expand-lg navbar-dark"> 
-    
-            <div class="collapse navbar-collapse" id="navbarText" style="width: 100%;">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/">HOME <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Events</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="highlight.html">Highlights</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Sponsors</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact_us.html">Contact Us</a>
-                    </li>
-                </ul>
-                <span style="font-size: 1.3vw;color: #FFFFFF;font-family: 'Black Ops One', cursive;letter-spacing:0.4vw" class="navbar-text">
+        <nav style="font-family: 'Aldrich', sans-serif " > 
+            <div class="topnav" id="myTopnav" width="100%">
+                <a href="/">Home</a>
+                <a href="about.html">About</a>
+                <a href="#events">Events</a>
+                <a href="highlight.html">Highlights</a>
+                <a href="#sponsors">Sponsors</a>
+                <a href="contact_us.html">Contact us</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+                <span style="font-size: 1.4vw;float:right;padding:12px 12px;color: #FFFFFF;font-family: 'Black Ops One', cursive;letter-spacing:0.4vw"id="hide">
+                   
                     AISSMS IOIT
-                </span>
-            </div>
+                </span>  
+              </div>
+              
         </nav>
+
+        <script>
+            /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+        </script>
         <!--any help ?-->
 
         <div style="width: 100%;margin-top: 2vw;font-family: 'Aldrich', sans-serif">
@@ -63,6 +67,9 @@
 
                 <div style="margin-top: 10vw" class="container-fluid">
                     <div style="color: white;" class="row">
+
+                            
+                        
 
                         <div class="col-sm-4">                      
                             <p class="headings">GENERAL SECRETARY</p>
