@@ -1,0 +1,25 @@
+.headings{
+
+    animation-name: unboxing;
+    animation-duration: 2s;
+
+}
+
+.containt{
+
+    animation-name: unboxing-containt;
+    animation-duration: 2s;
+
+}
+
+@keyframes unboxing{
+    from{font-size:0.5vw;}
+    to{font-size:1.5vw;}
+}
+
+@keyframes unboxing-containt{
+
+    from{font-size: 0.5vw;}
+    to{font-size: 1vw;}
+
+}
